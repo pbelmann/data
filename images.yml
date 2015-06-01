@@ -1,0 +1,26 @@
+---
+assemblers:
+  -
+    image:
+      dockerhub: nucleotides/velvet
+      repo: https://github.com/nucleotides/docker-velvet
+      source: https://github.com/dzerbino/velvet
+    pmid: 18349386
+    homepage: https://www.ebi.ac.uk/~zerbino/velvet/
+    description:
+    The velvet assembler was one of the first assemblers created for short read sequencing. Velvet was developed at the European Bioinformatics Institute.
+    tasks:
+      - default
+      - careful
+  -
+    image:
+      dockerhub: nucleotides/megahit
+      repo: https://github.com/nucleotides/docker-megahit
+      source: https://github.com/voutcn/megahit
+    pmid:
+    homepage:
+    description: >
+      MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
+    tasks:
+      - default
+      - no-mercy
