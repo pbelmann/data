@@ -2,8 +2,8 @@
 assemblers:
   -
     image:
-      dockerhub: nucleotides/velvet
-      repo: https://github.com/nucleotides/docker-velvet
+      dockerhub: bioboxes/velvet
+      repo: https://github.com/bioboxes/velvet
       source: https://github.com/dzerbino/velvet
     pmid: 18349386
     homepage: https://www.ebi.ac.uk/~zerbino/velvet/
@@ -14,8 +14,8 @@ assemblers:
       - careful
   -
     image:
-      dockerhub: nucleotides/megahit
-      repo: https://github.com/nucleotides/docker-megahit
+      dockerhub: bioboxes/megahit
+      repo: https://github.com/bioboxes/megahit
       source: https://github.com/voutcn/megahit
     pmid:
     homepage:
