@@ -34,7 +34,7 @@ assemblers:
     mailing_list: https://groups.google.com/forum/#!forum/hku-idba
     description: >
       IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
-    procs:
+    tasks:
       - default
       - single-cell
       - idba
@@ -48,7 +48,7 @@ assemblers:
     mailing_list:
     description: >
       The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
-    procs:
+    tasks:
       - default
   -
     image:
@@ -60,9 +60,7 @@ assemblers:
     mailing_list:
     description: >
       SparseAssembler utilises a sparse k-mer graph structure evolved from the de Bruijn graph and is developed at the Chinese Academy of Sciences in Menglun.
-    benchmark_types:
-      - "0000"
-    procs:
+    tasks:
       - default
       - careful  
   - 
@@ -75,7 +73,7 @@ assemblers:
     mailing_list: https://groups.google.com/forum/#!forum/sga-users
     description: >
       De novo sequence assembler using string graphs developed at the Wellcome Trust Sanger Institute in the UK.
-    procs:
+    tasks:
       - default
       - careful
   -
@@ -88,7 +86,7 @@ assemblers:
     mailing_list: https://www.biostars.org/t/minia/
     description: >
       Minia is a short-read assembler based on a de Bruijn graph, capable of assembling a human genome on a desktop computer in a day. Minia is developed at the IRISA institute in France.
-    procs:
+    tasks:
       - default
   -
     image:
@@ -100,5 +98,5 @@ assemblers:
     mailing_list: https://www.biostars.org/t/gatb/
     description: >
       Ray is a parallel software that computes de novo genome assemblies with next-generation sequencing data.
-    procs:
+    tasks:
       - default
