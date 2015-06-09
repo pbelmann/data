@@ -24,3 +24,57 @@ assemblers:
     tasks:
       - default
       - no-mercy
+  -
+    image:
+      dockerhub: bioboxes/idba
+      repo: https://github.com/bioboxes/idba
+      source: https://code.google.com/p/hku-idba/
+    pmid: 22495754
+    homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
+    mailing_list: https://groups.google.com/forum/#!forum/hku-idba
+    description: >
+      IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
+    procs:
+      - default
+      - single-cell
+      - idba
+  -
+    image:
+      dockerhub: bioboxes/soap
+      repo: https://github.com/bioboxes/soap
+      source: http://sourceforge.net/projects/soapdenovo2/files/SOAPdenovo2/
+    pmid: 23587118
+    homepage: http://soap.genomics.org.cn/soapdenovo.html
+    mailing_list:
+    description: >
+      The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
+    procs:
+      - default
+  -
+    image:
+      dockerhub: bioboxes/sparse
+      repo: https://github.com/bioboxes/sparse
+      source: http://sourceforge.net/projects/sparseassembler/
+    pmid: 22537038
+    homepage: https://sites.google.com/site/sparseassembler/
+    mailing_list:
+    description: >
+      SparseAssembler utilises a sparse k-mer graph structure evolved from the de Bruijn graph and is developed at the Chinese Academy of Sciences in Menglun.
+    benchmark_types:
+      - "0000"
+    procs:
+      - default
+      - careful  
+  - 
+    image:
+      dockerhub: bioboxes/sga
+      repo: https://github.com/bioboxes/sga
+      source: https://github.com/jts/sga
+    pmid: 22156294
+    homepage: https://github.com/jts/sga/wiki
+    mailing_list: https://groups.google.com/forum/#!forum/sga-users
+    description: >
+      De novo sequence assembler using string graphs developed at the Wellcome Trust Sanger Institute in the UK.
+    procs:
+      - default
+      - careful
