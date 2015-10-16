@@ -7,6 +7,7 @@ assemblers:
       source: https://github.com/dzerbino/velvet
     pmid: 18349386
     homepage: https://www.ebi.ac.uk/~zerbino/velvet/
+    mailing_list: http://listserver.ebi.ac.uk/mailman/listinfo/velvet-users
     description:
       The velvet assembler was one of the first assemblers created for short read sequencing. Velvet was developed at the European Bioinformatics Institute.
     tasks:
@@ -17,7 +18,7 @@ assemblers:
       dockerhub: bioboxes/megahit
       repo: https://github.com/bioboxes/megahit
       source: https://github.com/voutcn/megahit
-    pmid:
+    pmid: 25609793
     homepage:
     description: >
       MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
@@ -45,7 +46,7 @@ assemblers:
       source: http://sourceforge.net/projects/soapdenovo2/files/SOAPdenovo2/
     pmid: 23587118
     homepage: http://soap.genomics.org.cn/soapdenovo.html
-    mailing_list:
+    mailing_list: https://groups.google.com/forum/#!forum/bgi-soap
     description: >
       The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
     tasks:
