@@ -1,11 +1,6 @@
 ---
 version: 0.1.0
-interfaces:
-  assembler:
-     title: Short Read Assembler
-     description: A genome assembler converts one or more FASTQ files of DNA short reads into larger contiguous ('contigs') regions of DNA.
-     definition link: https://github.com/bioboxes/rfc/blob/master/container/short-read-assembler/rfc.mkd
-tools:
+images:
   - 
     title: velvet
     image:
