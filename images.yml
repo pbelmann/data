@@ -101,3 +101,20 @@ assemblers:
       Ray is a parallel software that computes de novo genome assemblies with next-generation sequencing data.
     tasks:
       - default
+  -
+    image:
+      dockerhub: bioboxes/velour
+      repo: https://github.com/bioboxes/velour
+      source: https://github.com/jjcook/velour
+    pmid:
+    homepage:
+    mailing_list:
+    description: >
+      Velour is a memory efficient short read de novo DNA sequence assembly tool for gigabase-scale genomes.
+    tasks:
+      - default
+      - fast
+      - fast2
+      - faster
+      - faster2
+
