@@ -5,116 +5,123 @@ assemblers:
       dockerhub: bioboxes/velvet
       repo: https://github.com/bioboxes/velvet
       source: https://github.com/dzerbino/velvet
+      versions:
+        - tasks: ["default", "careful"]
+          sha256: 6611675a6d3755515592aa71932bd4ea4c26bccad34fae7a3ec1198ddcccddad
+          name: "1.2.10"
     pmid: 18349386
     homepage: https://www.ebi.ac.uk/~zerbino/velvet/
     mailing_list: http://listserver.ebi.ac.uk/mailman/listinfo/velvet-users
     description:
       The velvet assembler was one of the first assemblers created for short read sequencing. Velvet was developed at the European Bioinformatics Institute.
-    tasks:
-      - default
-      - careful
   -
     image:
       dockerhub: bioboxes/megahit
       repo: https://github.com/bioboxes/megahit
       source: https://github.com/voutcn/megahit
+      versions:
+        - sha256: b6bc1475be3ff72b26e23903dfae24ceded227167ae7363b80954b11906deac7
+          name: "1.0.6"
+          tasks: ["default", "no-mercy"]
     pmid: 25609793
     homepage:
     description: >
       MEGAHIT is a NGS de novo assembler for assembling large and complex metagenomics data in a time- and cost-efficient manner, it is developed in the department of Computer Science at the University of Hong Kong.
-    tasks:
-      - default
-      - no-mercy
   -
     image:
       dockerhub: bioboxes/idba
       repo: https://github.com/bioboxes/idba
       source: https://code.google.com/p/hku-idba/
+      versions:
+        - sha256: c97b741e992cb9cf82ff2f9c44673be2a914ac5c2cd20fa2e4975864cce09473
+          name: "1.0.9"
+          tasks: ["default", "single-cell", "idba"]
     pmid: 22495754
     homepage: http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
     mailing_list: https://groups.google.com/forum/#!forum/hku-idba
     description: >
       IDBA (iterative De Bruijn Graph De Novo Assembler) is developed by the Bioinfomatics Research Group in the department of Computer Science at the University of Hong Kong.
-    tasks:
-      - default
-      - single-cell
-      - idba
   -
     image:
       dockerhub: bioboxes/soap
       repo: https://github.com/bioboxes/soap
       source: http://sourceforge.net/projects/soapdenovo2/files/SOAPdenovo2/
+      versions:
+        - name: "2.04"
+          tasks: ["default"]
+          sha256: 16d6dc4d076088ab1af97d4bbf9f052a54f6d51f4b0221fb93844013eccdda68
     pmid: 23587118
     homepage: http://soap.genomics.org.cn/soapdenovo.html
     mailing_list: https://groups.google.com/forum/#!forum/bgi-soap
     description: >
       The short oligonucleotide analysis package (SOAP) is developed by BGI HK Research Institute in Hong Kong.
-    tasks:
-      - default
   -
     image:
       dockerhub: bioboxes/sparse
       repo: https://github.com/bioboxes/sparse
       source: http://sourceforge.net/projects/sparseassembler/
+      versions:
+        - name: "17.08.2012"
+          tasks: ["default", "careful"]
+          sha256: 3483ddcd1e4b1a91ceb24d8e7d085eaa51ea6354560cf5e455baa77c2b8ffb40
     pmid: 22537038
     homepage: https://sites.google.com/site/sparseassembler/
     mailing_list:
     description: >
       SparseAssembler utilises a sparse k-mer graph structure evolved from the de Bruijn graph and is developed at the Chinese Academy of Sciences in Menglun.
-    tasks:
-      - default
-      - careful  
   - 
     image:
       dockerhub: bioboxes/sga
       repo: https://github.com/bioboxes/sga
       source: https://github.com/jts/sga
+      versions:
+        - tasks: ["default", "careful"]
+          name: "v0.10.13"
+          sha256: 3dda6c28b5843af51c53344f1309f8a21358292539233408b130baedc849556f
     pmid: 22156294
     homepage: https://github.com/jts/sga/wiki
     mailing_list: https://groups.google.com/forum/#!forum/sga-users
     description: >
       De novo sequence assembler using string graphs developed at the Wellcome Trust Sanger Institute in the UK.
-    tasks:
-      - default
-      - careful
   -
     image:
       dockerhub: bioboxes/minia
       repo: https://github.com/rchikhi/docker-minia
       source:
+      versions:
+        - tasks: ["default"]
+          name: "1.6906"
+          sha256: f1d8384b229a38351528d321f148210e1eee417204b6265e538fa2f776b25253
     pmid: 24040893
     homepage: http://minia.genouest.org/
     mailing_list: https://www.biostars.org/t/minia/
     description: >
       Minia is a short-read assembler based on a de Bruijn graph, capable of assembling a human genome on a desktop computer in a day. Minia is developed at the IRISA institute in France.
-    tasks:
-      - default
   -
     image:
       dockerhub: bioboxes/ray
       repo: https://github.com/sebhtml/ray
       source:
+      versions:
+        - tasks: ["default"]
+          sha256: faa7f64683ae2e9d364127a173dadb6a42f9fe90799625944cfcadb27fdd5a29
+          name: "2.3.0"
     pmid: 20958248
     homepage: http://gatb.inria.fr/
     mailing_list: https://www.biostars.org/t/gatb/
     description: >
       Ray is a parallel software that computes de novo genome assemblies with next-generation sequencing data.
-    tasks:
-      - default
   -
     image:
       dockerhub: bioboxes/velour
       repo: https://github.com/bioboxes/velour
       source: https://github.com/jjcook/velour
+      versions:
+        - tasks: ["default", "fast", "fast2", "faster", "faster2"]
+          name: "4669239608655289e2538ea69161dad433ab5fbf"
+          sha256: fb000d39755a008f265dc871bbe3d741e36f97445f385ab99206888f8ac705dd
     pmid:
     homepage:
     mailing_list:
     description: >
       Velour is a memory efficient short read de novo DNA sequence assembly tool for gigabase-scale genomes.
-    tasks:
-      - default
-      - fast
-      - fast2
-      - faster
-      - faster2
-
